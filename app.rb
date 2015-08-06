@@ -4,6 +4,10 @@ require 'digest/md5'
 require 'date'
 
 class App < Sinatra::Base
+  get '/' do
+    redirect '/founders'
+  end
+
   get '/founders' do
     content_type :json
 
@@ -47,6 +51,6 @@ class App < Sinatra::Base
     # directives, subsequent requests will be nearly instantaneous.
     sleep 5
     
-    return @founders.to_json
+    return JSON.pretty_generate(@founders.to_a)
   end
 end
