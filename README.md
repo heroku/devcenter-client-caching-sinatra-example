@@ -7,14 +7,15 @@ To deploy this application to your own Heroku account, perform the following.
 Ensure you have installed the [Heroku Toolbelt](https://toolbelt.heroku.com) or all prerequisites included. Then:
 
 ```term
-$ git clone https://github.com/heroku/devcenter-client-caching-sinatra-example.
+$ git clone https://github.com/DouglasAllen/devcenter-client-caching-sinatra-example.git
 Cloning into devcenter-client-caching-sinatra-example...
 remote: Counting objects: 7, done.
 remote: Compressing objects: 100% (6/6), done.
 remote: Total 7 (delta 0), reused 7 (delta 0)
 Unpacking objects: 100% (7/7), done.
 
-$ cd devcenter-client-caching-sinatra-example.git
+$ cd devcenter-client-caching-sinatra-example
+$ bundle update
 
 $ heroku create -s cedar
 Creating floating-wind-3377... done, stack is cedar
